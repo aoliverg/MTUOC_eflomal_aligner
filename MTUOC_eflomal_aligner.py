@@ -108,7 +108,7 @@ def align_corpus(corpusL1,corpusL2,aliFWD,aliREV,inpriorsFILE,outpriorsFILE,limi
         os.remove(REV)
         if i>1:
             os.remove(PREVPRIORS)
-    shutil.copyfile(PRIORS, priorsFILE)
+    shutil.copyfile(PRIORS, outpriorsFILE)
     todeletetemp=glob.glob('./*.temp')
     for filename in todeletetemp:
         os.remove(filename)
